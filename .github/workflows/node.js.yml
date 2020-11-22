@@ -25,8 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-      working-directory: MID_assign_1
+      working-directory: mid_app
     - run: npm run build --if-present
-      working-directory: MID_assign_1
+      working-directory: mid_app
     - run: npm test
-      working-directory: MID_assign_1
+      working-directory: mid_app
